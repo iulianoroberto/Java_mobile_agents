@@ -18,4 +18,4 @@ Gli elementi fondamentali dell'applicazione sono:
 Il container concettualmente è un ambiente che ospita gli agenti mobili e ne gestisce l'esecuzione. In termini programmatici lo stesso si configura, in questo caso, come un oggetto remoto. Quindi, un container viene creato istanziando un oggetto remoto. A tal fine è stata prevista l'interfaccia AgentContainer e la classe AgentContainerImpl.
 
 ### Agenti mobili
-Gli agenti mobili rappresentano le entità che si spostano nei diversi container. A differenza della mobilità del codice con un agente si sposta anche lo stato, non solo il codice. 
+Gli agenti mobili rappresentano le entità che si spostano nei diversi container. A differenza della mobilità del codice con un agente si sposta anche lo stato, non solo il codice. In questo caso un agente mobile si concretizza in un ogetto di tipo MyAgent. La classe MyAgent estende la classe AbstarctAgent, che a sua volta implementa l'interfaccia Agent. Un oggetto di tipo MyAgent è serializzabile. Tramite la serializzazione un oggetto "MyAgent" viene linearizzato e trasferito nel container di destinazione.
