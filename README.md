@@ -24,3 +24,7 @@ Gli agenti mobili rappresentano le entità che si spostano nei diversi container
 
 ### Processo Server
 All'avvio del processo server vengono creati dei container. Degli oggetti di tipo Container. Gli stessi sono registrati sul rmiregistry tramite un'operazione di rebind.
+
+### Main
+Prima di avviare l'applicazione è necessario: avviare il binder rmiregistry, costruire i container tramite il server. Lanciando il main viene definito il percorso che l'agente dovrà seguire (i container che dovrà attraversare). Di default è previsto che l'agente attraversi tre container (container0, container1 e container2). Quindi viene ecreato e avviato un agente a cui si affida il tour.
+
